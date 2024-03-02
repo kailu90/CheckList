@@ -4,44 +4,35 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
-    <title>Check List</title>
+    <link rel="shortcut icon" href="./Image/Logo_fav_32.png" type="image/x-icon">
+    <title>Login</title>
 </head>
 <body>
-    <main class="main_container">
-        <section class="check_list_container">       
-            <div class="check_list_container__title">
-                <h1>CHECK LIST TRADING</h1>
+    <main class="main_container__login">
+        <div class="login_container">
+            <div class="login_container__card">
+                <img class="image_profile" src="./Image/ImagenClannish.png" alt="">
+                <h2>Login</h2>
+                <form class="form_login">
+                    <label class="label_login label_correo" for="input_correo">Correo</label>
+                    <input class="input_login" id="input_correo" type="text" placeholder="Ingresa tu correo">
+                    <label class="label_login label_contraseña" for="input_contraseña">Contraseña</label>
+                    <input class="input_login" id="input_contraseña" type="password" placeholder="Ingresa tu contraseña">                    
+                    <button class="btn btn_login" id="btnLogin">INGRESAR</button>
+                </form>
+                <div class="widget_login_container">   
+                    <p>¿No tienes una cuenta?</p>
+                    <a href="./login_new.html">Crear una cuenta nueva</a>
+                </div>
             </div>
-            <div  class="check_list_container__elements">
-                <h2>CONFIRMACIONES</h2>
-                <ul class="list_elements">
-                    <li>
-                        <input class="input_confirmation1" type="checkbox">
-                        <label for="input_confirmation1">QUIEBRES ESTRUCTURALES MIN/MAX PREDOMINANTES.</label>
-                    </li>
-                    <li>
-                        <input class="input_confirmation2" type="checkbox">
-                        <label for="input_confirmation2">IDENTIFICACIÓN CICLO DE 5 ONDAS EN 15 MIN, LIQUIDEZ E IMBALANCE.</label>            
-                    </li>
-                    <li>
-                        <input class="input_confirmation3" type="checkbox">
-                        <label for="input_confirmation3">TOMA DE LIQUIDEZ EXTERNA E INTERNA EN 5 MIN.</label>                         
-                    </li>
-                    <li>
-                        <input class="input_confirmation4" type="checkbox">
-                        <label for="input_confirmation4">REACCIÓN A OTE 61.8%, 75%, 85%.</label>                           
-                    </li>
-                    <li>
-                        <input class="input_confirmation5" type="checkbox">
-                        <label for="input_confirmation5">PATRÓN DE GIRO, RUPTURA DE CM CON CUERPO DE VELA EN 5 MIN</label>                         
-                    </li>
-                </ul>
-            </div>           
-        </section>
-        <div class="next_page">
-            <img src="./Image/next.png" alt="icon next page">
+           
+            
+            <div class="login_container__title">
+                <h1>BITACORA</h1>
+                <h2>CLANNISH FX</h2>
+            </div>
         </div>
     </main>
-    
+    <script src="./checkList.js"></script>>
 </body>
 </html>

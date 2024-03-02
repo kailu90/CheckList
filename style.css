@@ -9,12 +9,16 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: Sans-serif;    
 }
 
 li {
     list-style: none;
 }
 
+a {
+    text-decoration: none;
+}
 
 
 
@@ -177,4 +181,139 @@ input[type="checkbox"] label {
         margin: 50px auto;
     }
 
+}
+
+
+
+
+
+
+/*--------------------------------------------
+
+    ?login
+
+----------------------------------------------*/
+
+
+.main_container__login {
+    display: flex;
+    min-height: 100vh;    
+    background-image: url(./Image/bg-graphics.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.login_container {
+   display: flex;
+    margin: auto auto;
+    min-height: 80vh;
+    background-color: #202020;
+    padding: 50px;   
+}
+
+.login_container__card {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 50vw;
+    max-width: 400px;
+    color: #000;   
+    background-color: #fff;
+    height: max-content;
+    margin: auto;
+    border-radius: 10px;
+}
+
+.image_profile {
+    position: absolute;
+    top: -50px;
+    left: calc(50% - 50px);
+    width: 100px;
+    border-radius: 50%;
+    margin: 10px auto;
+}
+
+.login_container__card  h2 {
+    font-size: 3rem;
+    margin: 100px auto 30px auto;
+}
+
+.login_container__card .label_login {   
+    font-weight: bold;
+    margin-top: 20px;
+}
+
+
+.login_container__card .input_login {
+    background-color: transparent;     
+    border: none;
+    border-bottom: 2px solid #202020;
+    height: 30px;
+}
+
+.login_container__card .input_login::placeholder {
+    color: #202020;
+    padding: 10px;
+    margin-bottom: 10px;
+}
+
+
+
+
+
+.form_login {    
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+    gap: 10px;
+    color: #202020;  
+    margin-bottom: 20px;   
+}
+
+.btn_login {
+    width: 200px;
+    height: 40px;
+    border-radius: 30px;
+    margin: 20px auto;
+    background-color: #202020;
+    color: #fff;
+    font-size: 1.4rem;
+}
+
+.widget_login_container {
+    display: flex;
+    color: #202020;
+    margin-bottom: 50px;
+}
+
+.widget_login_container p {
+    margin-right: 20px;
+}
+
+.widget_login_container a {
+    font-weight: bold;
+}
+
+.widget_login_container a:hover {
+    text-decoration: underline;
+    color: #202020;
+}
+
+
+.login_container__title {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    width: 50vw;
+    color: #fff;
+    font-size: 5rem;    
+}
+
+.login_container__title h1 {
+    font-size: 10rem;
 }
