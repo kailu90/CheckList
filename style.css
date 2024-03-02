@@ -1,3 +1,10 @@
+/*--------------------------------------------
+
+     ?Estilos Generales
+
+----------------------------------------------*/
+
+
 * {
     margin: 0;
     padding: 0;
@@ -10,19 +17,40 @@ li {
 
 
 
+
+
+
+/*--------------------------------------------
+
+     ?Estilos Main
+
+----------------------------------------------*/
+
 .main_container {
     position: relative;
     display: flex;
     flex-direction: column;
     justify-content: center;
     width: 100vw;
-    height: 100vh;
+    min-height: 100vh;
     background-image: url(./Image/bg-desktop.png);
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
     color: #fff;
+    margin: 0 auto;
 }
+
+
+
+
+
+
+/*--------------------------------------------
+
+    ?Chech List
+
+----------------------------------------------*/
 
 .check_list_container__title {
     width: 100%;
@@ -54,6 +82,26 @@ li {
 .list_elements li {
     margin: 5px;
 }
+
+
+@media (max-width: 600px) {
+    .check_list_container {  
+        margin-top: 300px;     
+      position: static;
+    }
+
+}
+
+
+
+
+
+
+/*--------------------------------------------
+
+    ?Inputs Chech List
+
+----------------------------------------------*/
 
 input[type="checkbox"] {
     width: 20px;
@@ -90,6 +138,17 @@ input[type="checkbox"] label {
     vertical-align: middle;
 }
 
+
+
+
+
+
+/*--------------------------------------------
+
+    ?Botón Siguiente Página
+
+----------------------------------------------*/
+
 .next_page {
     width: 100px;
     position: absolute;
@@ -107,4 +166,15 @@ input[type="checkbox"] label {
 
 .next_page img {
     width: 100%;
+}
+
+@media (max-width: 600px) {
+    .next_page {  
+        position: static; 
+        display: flex;  
+        justify-self: center;  
+        align-self: center;
+        margin: 50px auto;
+    }
+
 }
